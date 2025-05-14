@@ -9,12 +9,12 @@
       "APP_ID": {
           "description": "كـود ايبي ايـدي〔 App id 〕اتركـه كمـا هــو",
           "required": true,
-          "value":"27455984"
+          "value":""
       },
       "APP_HASH": {
           "description": "كـود ايبي هـاش〔 Api Hash 〕اتركـه كمـا هــو",
           "required": true,
-          "value":"62d5f68ce2e9189636967120220f5755"
+          "value":""
       },
       "TERMUX": {
         "description": "كـــود جلســة تيــرمكــس - الكـود الكبيـر مـن حـافظـة حسـابـك او مـن بــوت〔 T66bot@ 〕..",
