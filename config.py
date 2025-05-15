@@ -1,18 +1,25 @@
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
-import os
 from pyro import validate_session
 
-APP_ID = os.environ.get("8400773")
-APP_HASH = os.environ.get("9262ddf84ab2647d2d59c0ba1d60d327")
+# ضع القيم الخاصة بك هنا مباشرة
+APP_ID = 20621590  
+# ضع هنا الـ APP_ID الخاص بك كرقم صحيح
+APP_HASH = "a7e91275d681fefd4b2453b158b254ec"  
+# ضع هنا الـ APP_HASH كسلسلة نصية
+ss = "1BJWap1sAUF8B-YYYtte-w_gCT7Ucb4SsqWC--N4wzwERLhYqByU1LPArKt54Mng2IFc-l7Gy1stQonO9RgAns9ZV4-pfjfWkNRA94iQi8dilnRhSz-_18vXFdbkGOx0SkFp6Uvexv6Cm4d2fcu3_UpzRynPLfQZJuCXz1GhbbydEWse8BFXWuL56OGCdNVoR78gG8TiJ1vYgekfRtP-MdjllylT2LDkGu_pYoYnS0qXeAogFzhlkdl-OQtBenR2yYnQ4zX8CVD_5QPh_bD4Q7iReOcyx0xIbbM_HaK-0Pd_C385e-rcLfjj_wlS4ZWLrfAnO5kwEm5fiZsg9ViC-zm9W_1gf36k="
+  # ضع هنا الـ String Session كنص
 
-ss = os.environ.get("1BJWap1sBuxObMZXde7S4nLQ8s1NfrBKMVyDEUVlVVgK3U7y7Y6nmWBVub9IIVufXH1zqAYDE9YW9pYcVr3OTq9tHVoKkLWLD9Ay6NHTRzHuDxcgixCOxtqri5Wfm97o0DODBmHZA3VIaLCQzWKOgq8mt1Bi_8hbc4DJ-FQBO5FiSbNw2hfXuO8506YC0mnBJoK4w7wQcws3_XUa3bEGhwEm52pauS59RBCIBpEpz7VkiCXScyFw73cvauNFF5JLinPhqsvNnW0yFfpxGIMcnnrZshp1K-zXtag_vP_0uiIq-Yxs02QWx12qqqUutE4pu-MdM7AGuzKhIodrWX14vU8ybbrskpik=")
+# التحقق من صحة الجلسة
 session = validate_session(ss)
+
+# إنشاء العميل
 IEX = TelegramClient(StringSession(session), APP_ID, APP_HASH)
 
 ispay = ['yes']
 
-# BOT_USERNAME = os.environ.get("BOT_USERNAME")
-# token = os.environ.get("TOKEN")
+# إذا كنت تستخدم بوت، يمكنك تفعيل الأسطر التالية:
+# BOT_USERNAME = "your_bot_username"
+# token = "your_bot_token"
 # bot = TelegramClient("bot", APP_ID, APP_HASH).start(bot_token=token)
 # bot.start()
